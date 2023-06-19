@@ -1,0 +1,10 @@
+This line is very nice:
+
+df['diagnosis'] = df.diagnosis.apply(lambda x: 1 if x =='M' else -1)
+
+
+Very nice job scaling the data. 
+
+Very nice job on everything!
+
+A 

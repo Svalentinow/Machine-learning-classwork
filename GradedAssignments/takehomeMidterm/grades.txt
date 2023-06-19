@@ -1,0 +1,49 @@
+Nice job on 1 and 2a.
+
+On 2b you could use the `.columns` attribute to give a cleaner answer.
+Another trick people used is to slice out zero rows, as in
+
+    codons = df.iloc[0:0, 5 : ]
+
+Very nice answer to 3c.
+
+For 7 you did
+
+    X_train,X_test,y_train,y_test = train_test_split(X,y,test_size =.2,random_state =45)
+    scl = StandardScaler()
+    X_train = scl.fit_transform(X_train)
+    X_test = scl.fit_transform(X_test)
+
+This is good in that you don't let information leak from X_train to X_test.
+
+The disadvantage is that now X_train and X_test are transformed in slightly different ways.
+
+If you imaging a real life application when you get one new data point, you have to scale it using just the training data (because that's all you have). 
+
+So it is more conventional to do:
+
+    X_train,X_test,y_train,y_test = train_test_split(X,y)
+
+    sclr = StandardScaler()
+
+    sclr.fit(X_train)
+
+    X_train_scl = sclr.transform(X_train)
+    X_test_scl = sclr.transform(X_test)
+
+Very impressive using grid search!
+
+For 11 you give the min but you want the min subject to the constraint that the value is at least 0.5. 
+
+Full credit on Bonus 2, nice work.
+
+I will say that the bonus (plus grid search) and any problems with your work cancel out.
+
+Excellent job. 
+
+100%.
+
+
+
+
+

@@ -1,0 +1,49 @@
+I can understand what you are saying here and to me the informal tone is pleasant.
+
+But I wish you had taken a more formal tone just to practice for a professional setting.
+
+Maybe show the dimensions of the dataset early on?
+
+In "remove punc" is something like this going to be an issue?
+
+"I saw Amy--the girl over there" --> "i saw amythe girl over there"
+
+Note that the removal of -- elides two words together.
+
+Also this same trouble can happen with \n.
+
+In your output I see "brushthey" which makes me curious.
+
+You already know a lot about NLP ... Did you learn all this in 455?  If so we need Haley back :)
+
+LSTM is very interesting, but isn't it better for things like word prediction?
+
+Here you don't really need a "memory".  
+
+I think plain old bag of words NaiveBayes would do better than 7% accuracy here.
+
+In fact it is weird that in the training portion validation accuracy is 0% because a random choice would be 25%.
+
+You have to be pretty smart to get none right.  Maybe the last layer has an issue?
+
+But it works fine with "evaluate".
+
+With the bi-directional LSTM you get very high training accuracy.  Maybe add more regularization?
+
+I think this classification task does not play to the strengths of the LSTM and CNN models.
+
+I am not an expert on those topics -- I wish I could give you more detailed guidance on how to improve the setup.
+
+For one thing my understanding of word embeddings is very basic.
+
+Would just a bag of words work better?
+
+If this were a longer term project we would want to establish a baseline for performance using simple methods.
+
+But I do see high training accuracy and low test accuracy (and some very complex models) which makes me think: More regularlization!
+
+I applaud you though for taking on such a challenging model family, and presenting your results honestly like a true scientist!
+
+A
+
+

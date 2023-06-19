@@ -1,0 +1,9 @@
+Stephen, this is picture perfect work. 
+
+I wonder if there is a way to easily convert street address to lat/long?  
+
+Probably some API is out there.  I wonder if it would improve performance to add it here.
+
+Also it would be cool if they would update this dataset with images of the homes.
+
+10/10

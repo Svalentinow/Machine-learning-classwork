@@ -1,0 +1,13 @@
+This is good work. 
+
+You do not really exploit the similarities of the methods in your unified function, but at least it basically works. 
+
+One section is headed "logit".  This function is the log of the odds ratio - it is not the same as logistic regression (just making sure that's clear). 
+
+Your logistic regression code is right but I see the accuracy is low.
+
+I think it has something to do with +-1 being the classes for Adaline and Perceptrion,
+but 0,1 being the classes for logistic regression. 
+
+10/10
+

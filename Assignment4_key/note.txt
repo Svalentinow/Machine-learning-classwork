@@ -1,0 +1,7 @@
+If you cannot open note.md you need a markdown reader.
+
+You should be able to open it with Jupyterlab or VisualStudioCode, or any number of freely available markdown readers.
+
+If all of that fails you can just use a text editor :)
+
+

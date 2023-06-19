@@ -1,0 +1,236 @@
+
+
+
+
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">
+<html>
+<head>
+<title>UCI Machine Learning Repository: Accelerometer Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="../assets/ml.css" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table width=100% bgcolor="#003366">
+<tr>
+	<td>
+		<span class="normal"><a href="../index.html" alt="Home"><img src="../assets/logo.gif"
+border=0></img></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td width=100% valign=top align="right">
+		<span class="whitetext">
+		<a href="../about.html">About</a>&nbsp;
+		<a href="../citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="../donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="../contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<FORM method=GET action=https://www.google.com/custom onsubmit="return checkform(this);">
+		<INPUT TYPE=text name=q size=30 maxlength=255 value="">
+		<INPUT type=submit name=sa VALUE="Search">
+		<INPUT type=hidden name=cof VALUE="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;">
+		<input type=hidden name=domains value="ics.uci.edu">
+		<br>
+		<input type=radio name=sitesearch value="ics.uci.edu" checked> <span class="whitetext"><font size="1">Repository</font></span>
+		<input type=radio name=sitesearch value=""> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<A HREF=https://www.google.com/search><IMG SRC=https://www.google.com/logos/Logo_25blk.gif border=0 ALT=Google align=middle height=27></A>
+		<br>
+		</FORM>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="../datasets.php"><font size="3" color="#FFDD33"><b>View
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</table>
+
+
+<br />
+
+<div style="background-color:#6E4100; color:white; padding:20px; margin-bottom:8px">
+	  <span onclick="this.parentElement.style.display='none';" style="float:right; cursor:pointer; margin-left: 8px; font-size:x-large; line-height:16px"><strong>&times;</strong></span>
+	  Check out the <a target="_blank" href="https://archive-beta.ics.uci.edu/" style="color:white">beta version</a> of the new UCI Machine Learning Repository we are currently testing! <a target="_blank" href="https://archive-beta.ics.uci.edu/ml/contact" style="color:white">Contact us</a> if you have any issues, questions, or concerns. <a target="_blank" href="https://archive-beta.ics.uci.edu/" style="color:white">Click here to try out the new site</a>.
+</div>
+
+<table width=100% border=0 cellpadding=2><tr><td>
+
+   <table><tr>
+     <td valign=top>
+	<p>
+	<span class="heading"><b>Accelerometer Data Set</b></span>
+	<br><span class="normal"><i><font size=4 >Download</font></i>: <a href="../machine-learning-databases/00611/"><font
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Folder</font></a>, <a href="#"><font
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: Accelerometer data from vibrations of a cooler fan with weights on its blades. It can be used for predictions, classification and other tasks that require vibration analysis, especially in engines.</p>
+     </td>
+     <td> </td>
+   </tr></table>
+
+<table border=1 cellpadding=6>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">153000</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">Computer</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Integer, Real</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">5</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">2021-05-02</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification, Regression</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">N/A</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">34423</p></td>
+	</tr>
+	<!--
+	<tr>
+
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</table>
+
+
+<br />
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Gustavo Scalabrini Sampaio<br><u>gustavo.sampaio <b>'@'</b> mackenzista.com.br</u><br>Postgraduate Program in Electrical Engineering and Computing, Mackenzie Presbyterian University, SÃ£o Paulo, Brazil.<br><br>Arnaldo Rabello de Aguiar Vallim Filho<br><u>arnaldo.aguiar <b>'@'</b> mackenzie.br</u><br>Computer Science Dept., Mackenzie Presbyterian University, SÃ£o Paulo, Brazil.<br><br>Leilton Santos da Silva<br><u>leilton <b>'@'</b> emae.com.br</u><br>EMAEâ€”Metropolitan Company of Water & Energy, SÃ£o Paulo, Brazil.<br><br>Leandro Augusto da Silva<br><u>leandroaugusto.silva <b>'@'</b> mackenzie.br</u><br>Postgraduate Program in Electrical Engineering and Computing, Mackenzie Presbyterian University, SÃ£o Paulo, Brazil.<br><br><br>Donator:<br><br>Gustavo Scalabrini Sampaio</p>
+
+<br />
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">This dataset was generated for use on 'Prediction of Motor Failure Time Using An Artificial Neural Network' project (DOI: 10.3390/s19194342). A cooler fan with weights on its blades was used to generate vibrations. To this fan cooler was attached an accelerometer to collect the vibration data. With this data, motor failure time predictions were made, using an artificial neural networks. To generate three distinct vibration scenarios, the weights were distributed in three different ways: 1) 'red' - normal configuration: two weight pieces positioned on neighboring blades; 2) 'blue' - perpendicular configuration: two weight pieces positioned on blades forming a 90Â° angle; 3) 'green' - opposite configuration: two weight pieces positioned on opposite blades. A schematic diagram can be seen in figure 3 of the paper.<br><br>Devices used:<br>Akasa AK-FN059 12cm Viper cooling fan (Generate the vibrations)<br>MMA8452Q accelerometer (Measure vibration)<br><br>Data collection method:<br>17 rotation speeds were set up, ranging from 20% to 100% of the cooler maximum speed at 5% intervals; for the three weight distribution configurations in the cooler blades. Note that the Akasa AK-FN059 cooler has 1900 rpm of max rotation speed.<br><br>The vibration measurements were collected at a frequency of 20 ms for 1 min for each percentage, generating 3000 records per speed. Thus, in total, 153,000 vibration records were collected from the simulation model.</p>
+
+<br />
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">There are 5 attributes in the dataset: wconfid,pctid,x,y and z.<br><br>wconfid: Weight Configuration ID (1 - 'red' - normal configuration; 2 - 'blue' - perpendicular configuration; 3 - 'green' - opposite configuration)<br>pctid: Cooler Fan RPM Speed Percentage ID (20 means 20%, and so on).<br>x: Accelerometer x value.<br>y: Accelerometer y value.<br>z: Accelerometer z value.</p>
+
+<br />
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">Scalabrini Sampaio, Gustavo; Vallim Filho, Arnaldo R.d.A.; Santos da Silva, Leilton; Augusto da Silva, Leandro. 2019. Prediction of Motor Failure Time Using An Artificial Neural Network. Sensors 2019, 19, 4342. DOI: 10.3390/s19194342</p>
+
+<br />
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">N/A</p>
+
+-->
+
+
+
+<br />
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">If you have used this dataset in your work, please cite (<a href="https://doi.org/10.3390/s19194342">[Web Link]</a>):<br><br>Bib:<br>@article{ScalabriniSampaio2019,<br>  doi = {10.3390/s19194342},<br>  url = {<a href="https://doi.org/10.3390/s19194342">[Web Link]</a>},<br>  author = {Gustavo Scalabrini Sampaio and Arnaldo Rabello de Aguiar Vallim Filho and Leilton Santos da Silva and Leandro Augusto da Silva},<br>  title = {Prediction of Motor Failure Time Using An Artificial Neural Network},<br>  journal = {Sensors}<br>  year = {2019},<br>  month = oct,<br>  publisher = {{MDPI} {AG}},<br>  volume = {19},<br>  number = {19},<br>  pages = {4342},<br>}</p>
+
+</td></tr></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+
+
+<table cellpadding=5 align=center><tr valign=center>
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="../assets/nsfe.gif" height=60 /> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="../assets/rexaSmall.jpg" /></td>
+</tr></table>
+
+<center>
+<span class="normal">
+<a href="../about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="../citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu">CML</a>
+</span>
+</center>
+
+
+
+
+</body>
+</html>

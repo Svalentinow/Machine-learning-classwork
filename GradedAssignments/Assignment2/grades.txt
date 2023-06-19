@@ -1,0 +1,25 @@
+Nice work on feature scaling, except the last one.
+
+I am not sure why you changed my print function -- it was written to make it clear whether scaling was working.
+
+Notice that in your output the y axis is still 10 times bigger in scale than the x axis.  
+
+All that has changed is that the picture looks nicer, which will not help with the ML issues.
+
+The problem is that 
+
+np.linalg.norm(X)
+
+is a scalar.
+
+You need to use
+
+np.linalg.norm(X,axis=0)
+
+In 1.6 approach 2 is blank?
+
+Nice work on 1.8
+
+9/10
+
+

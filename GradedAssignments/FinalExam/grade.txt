@@ -1,0 +1,41 @@
+This is beautiful original code and it was a pleasure to read!
+
+A.
+
+    hyptan = lambda z: np.tanh(z)
+    hyptanPrime = lambda z: 1-np.tanh(z)**2
+
+    defaultActivation = hyptan
+    defaultActivationDerivative = hyptanPrime
+
+    def forward_prop(x,w,theta=defaultActivation):
+        S = {}
+        Xs = {}
+        Xs[0] = x
+        for i,W in enumerate(w):
+            s = W.T@x
+            S[i+1]=s
+            x = np.hstack(([1],theta(s)))
+            Xs[i+1] = x
+        return Xs,S
+
+    def backprop(Xs,yn,S,w,thetaPrime=defaultActivationDerivative):
+        L = len(w) ## num layers
+        delta = 2*(Xs[L][1:]-yn)*thetaPrime(S[L])
+        Deltas = {}
+        Deltas[L] = delta
+        l = L-1
+        while l > 0:
+            W = w[l]
+            Deltas[l] = thetaPrime(S[l])*(W@Deltas[l+1])[1:]
+            l -= 1
+        return Deltas
+
+    def NNgrad(Xs,Deltas):
+        w_grad = []
+        for i in range(len(Xs)-1):
+            eDiffW = np.outer(Xs[i],Deltas[i+1].T)
+            w_grad.append(eDiffW)
+        return w_grad
+
+

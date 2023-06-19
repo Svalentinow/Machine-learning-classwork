@@ -1,0 +1,29 @@
+Hi Stephen,
+
+Your explained variance ratio does add up to 1... I double checked.
+
+sum(pca.explained_variance_ratio_)
+
+has output 1.
+
+To find the number of components for 90% variance explained you can does
+
+pca = PCA(0.9)
+
+or manually using np.cumsum(pca.explained_variance_ratio).
+
+In your PCA plot you say
+
+sns.scatterplot(data= df_pca,x = "principal component 1",y = "principal component 1")
+
+but I think you mean
+
+sns.scatterplot(data= df_pca,x = "principal component 1",y = "principal component 2")
+
+I made the change and the plot came out right.
+
+It's interesting -- there seem to be some really significant outliers.
+
+For the silhouette method you should make a plot like this one for a range of k values and pick the one where the dashed line is closest to 1 when it hits the x-axis.
+
+8/10

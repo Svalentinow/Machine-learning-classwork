@@ -1,0 +1,5 @@
+Hi!
+
+Please put your work for Project 2 in this directory.
+
+
