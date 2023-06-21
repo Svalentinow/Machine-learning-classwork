@@ -10,7 +10,7 @@ Feel free to explore!
 I would like to mention a few of my work.
 ### Poem classification ([project 2](GradedAssignments/Project2))
 * analysed poems of 4 genres. Affection, environment, music and death
-* built LSTM, bidirectionanl LSTM and CNN to predict poem genre
+* built LSTM, bidirectional LSTM and CNN to predict poem genre
 * found that these models performed poorly when trying to classify poem genres
 ### [Final exam](GradedAssignments/FinalExam) 
 * created a simple neural net using tanh activation function from scratch
