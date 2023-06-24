@@ -21,5 +21,5 @@ I would like to mention a few of my work.
 
 # My review of this class
 Initially I did not like this class. Professor Johnson approach was more hands on where we had to create some models like adaline and logistic regression from scratch. I thought it was useless since
-the sci-kit learn library exists where you can import these models. However I changed my mind as I had fun doing these exercises that were sometimes hard. In addition, my knowledge of the math used in these models deepened, like linear alegbra and calculus. Maybe this class would only be usefull if I wanted to become a researcher but I still appreciate the in-depth look. 
+the sci-kit learn library exists where you can import these models. However I changed my mind as I had fun doing these exercises that were sometimes hard. In addition, my knowledge of the math used in these models deepened, like linear alegbra and calculus. Maybe this class would only be useful if I wanted to become a researcher but I still appreciate the in-depth look. 
 However, who knows? This knowledge and experience may be useful later.
