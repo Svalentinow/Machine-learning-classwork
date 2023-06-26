@@ -14,7 +14,7 @@ I would like to mention a few of my work.
 * found that these models performed poorly when trying to classify poem genres
 ### [Final exam](GradedAssignments/FinalExam) 
 * created a simple neural net using tanh activation function from scratch
-### data science salary([project 1](GradedAssignments/Proj1)) 
+### data science salary EDA([project 1](GradedAssignments/Proj1)) 
 * conducted EDA on data science salary
 * used central limit theorem
 * concluded that the dataset was not good enough for modelling due to lack of observations.
