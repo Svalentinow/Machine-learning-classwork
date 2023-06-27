@@ -11,6 +11,7 @@ I would like to mention a few of my work.
 ### data science salary EDA([project 1](GradedAssignments/Proj1)) 
 * conducted EDA on data science salary
 * Looked at which job and country offered the highest avg salary in data science
+* found that there was a significant imbalance of job titles and countries present within the dataset
 * concluded that the dataset was not good enough for modelling due to lack of observations.
 ### Poem classification ([project 2](GradedAssignments/Project2))
 * analysed poems of 4 genres. Affection, environment, music and death
