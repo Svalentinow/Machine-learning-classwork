@@ -8,16 +8,17 @@ Feel free to explore!
 
 # Highlights
 I would like to mention a few of my work.
+### data science salary EDA([project 1](GradedAssignments/Proj1)) 
+* conducted EDA on data science salary
+* Looked at which job and country offered the highest avg salary in data science
+* concluded that the dataset was not good enough for modelling due to lack of observations.
 ### Poem classification ([project 2](GradedAssignments/Project2))
 * analysed poems of 4 genres. Affection, environment, music and death
 * built LSTM, bidirectional LSTM and CNN to predict poem genre
 * found that these models performed poorly when trying to classify poem genres
 ### [Final exam](GradedAssignments/FinalExam) 
 * created a simple neural net using tanh activation function from scratch
-### data science salary EDA([project 1](GradedAssignments/Proj1)) 
-* conducted EDA on data science salary
-* used central limit theorem
-* concluded that the dataset was not good enough for modelling due to lack of observations.
+
 
 # My review of this class
 Initially I did not like this class. Professor Johnson approach was more hands on where we had to create some models like adaline and logistic regression from scratch. I thought it was useless since
